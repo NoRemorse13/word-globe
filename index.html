@@ -42,7 +42,7 @@ for (let i = 0; i < 300; i++) {
 
 // Материалы и шрифт
 const loader = new THREE.FontLoader();
-loader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function(font) {
+loader.load("helvetiker_regular.typeface.json", function(font) {
     words.forEach((word, i) => {
         const phi = Math.acos(-1 + (2 * i) / words.length);
         const theta = Math.sqrt(words.length * Math.PI) * phi;
